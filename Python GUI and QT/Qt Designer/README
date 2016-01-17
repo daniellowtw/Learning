@@ -1,0 +1,19 @@
+# Qt Designer
+
+This chapter is about using an IDE to create the UI.
+
+Requirements:
+
+* [Qt Creator](http://www.qt.io/download-open-source/#section-6)
+* PySide tooling (pyside-uic)
+
+The workflow is roughly as follows:
+
+* Create a new .ui file using Qt Designer which is integrated in Qt Creator
+* Save the .ui file
+* Convert to .py file using pyside-uic: `pyside-uic <input> -o <output>`
+* Create a subclass that inherits from the type of widget as well as the widget py file. e.g. 
+
+```
+class FindAndReplaceDlg(QDialog, ui_findandreplacedlg.Ui_FindAndReplaceDlg):
+```

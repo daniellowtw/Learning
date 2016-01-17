@@ -1,0 +1,30 @@
+# Introduction
+
+
+This are code snippets from following the book [Rapid GUI Programming with Python and Qt](http://www.qtrac.eu/pyqtbook.html)
+The book uses Python 2 and PyQt, while the snippets here have been ported to using PySide's Qt modules instead
+
+[Documentation for PySide](https://srinikom.github.io/pyside-docs/PySide/QtCore/Signal.html)
+
+# Faq
+
+## Is this obsolete?
+
+The book was written for Python 2 in mind. There has been some changes in Python 3, and also to PyQt. Things like unicode() is no longer needed in Python 3. PyQt has two API, and PySide uses the newer API, which means there isn't datatypes like QString, QVariant, etc.
+
+## Cannot compile to py from qrc file
+
+You need to use pyside-rcc. If you're using Windows like me, you might need to manually add the path to the binary in the environment. See [this SO question](http://stackoverflow.com/questions/22479581/cannot-use-pyside-rcc-to-compile-qrc-file).
+
+## Cannot run the py file created by qrc 
+
+You get the following error 
+
+```py
+TypeError: 'qRegisterResourceData' called with wrong argument types:
+  qRegisterResourceData(int, str, bytes, bytes)
+Supported signatures:
+  qRegisterResourceData(int, unicode, unicode, unicode)
+```
+
+See [this SO question](https://chr0n0m3t3r.wordpress.com/2014/04/03/build-pyside-with-python-3-4/)

@@ -1,0 +1,93 @@
+# -*- coding: utf-8 -*-
+
+# Form implementation generated from reading ui file 'dialog.ui'
+#
+# Created: Sun Jun 21 00:20:31 2015
+#      by: pyside-uic 0.2.15 running on PySide 1.2.2
+#
+# WARNING! All changes made in this file will be lost!
+
+from PySide import QtCore, QtGui
+
+class Ui_FindAndReplaceDlg(object):
+    def setupUi(self, FindAndReplaceDlg):
+        FindAndReplaceDlg.setObjectName("FindAndReplaceDlg")
+        FindAndReplaceDlg.resize(400, 149)
+        self.horizontalLayout_2 = QtGui.QHBoxLayout(FindAndReplaceDlg)
+        self.horizontalLayout_2.setObjectName("horizontalLayout_2")
+        self.verticalLayout = QtGui.QVBoxLayout()
+        self.verticalLayout.setObjectName("verticalLayout")
+        self.gridLayout = QtGui.QGridLayout()
+        self.gridLayout.setObjectName("gridLayout")
+        self.label = QtGui.QLabel(FindAndReplaceDlg)
+        self.label.setObjectName("label")
+        self.gridLayout.addWidget(self.label, 0, 0, 1, 1)
+        self.findLineEdit = QtGui.QLineEdit(FindAndReplaceDlg)
+        self.findLineEdit.setObjectName("findLineEdit")
+        self.gridLayout.addWidget(self.findLineEdit, 0, 1, 1, 1)
+        self.label_2 = QtGui.QLabel(FindAndReplaceDlg)
+        self.label_2.setObjectName("label_2")
+        self.gridLayout.addWidget(self.label_2, 1, 0, 1, 1)
+        self.replaceLineEdit = QtGui.QLineEdit(FindAndReplaceDlg)
+        self.replaceLineEdit.setObjectName("replaceLineEdit")
+        self.gridLayout.addWidget(self.replaceLineEdit, 1, 1, 1, 1)
+        self.verticalLayout.addLayout(self.gridLayout)
+        self.horizontalLayout = QtGui.QHBoxLayout()
+        self.horizontalLayout.setObjectName("horizontalLayout")
+        self.checkBox = QtGui.QCheckBox(FindAndReplaceDlg)
+        self.checkBox.setObjectName("checkBox")
+        self.horizontalLayout.addWidget(self.checkBox)
+        self.checkBox_2 = QtGui.QCheckBox(FindAndReplaceDlg)
+        self.checkBox_2.setObjectName("checkBox_2")
+        self.horizontalLayout.addWidget(self.checkBox_2)
+        self.verticalLayout.addLayout(self.horizontalLayout)
+        spacerItem = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.verticalLayout.addItem(spacerItem)
+        self.horizontalLayout_2.addLayout(self.verticalLayout)
+        self.line = QtGui.QFrame(FindAndReplaceDlg)
+        self.line.setFrameShape(QtGui.QFrame.VLine)
+        self.line.setFrameShadow(QtGui.QFrame.Sunken)
+        self.line.setObjectName("line")
+        self.horizontalLayout_2.addWidget(self.line)
+        self.verticalLayout_2 = QtGui.QVBoxLayout()
+        self.verticalLayout_2.setObjectName("verticalLayout_2")
+        self.pushButton = QtGui.QPushButton(FindAndReplaceDlg)
+        self.pushButton.setObjectName("pushButton")
+        self.verticalLayout_2.addWidget(self.pushButton)
+        self.pushButton_2 = QtGui.QPushButton(FindAndReplaceDlg)
+        self.pushButton_2.setObjectName("pushButton_2")
+        self.verticalLayout_2.addWidget(self.pushButton_2)
+        self.pushButton_3 = QtGui.QPushButton(FindAndReplaceDlg)
+        self.pushButton_3.setObjectName("pushButton_3")
+        self.verticalLayout_2.addWidget(self.pushButton_3)
+        spacerItem1 = QtGui.QSpacerItem(20, 40, QtGui.QSizePolicy.Minimum, QtGui.QSizePolicy.Expanding)
+        self.verticalLayout_2.addItem(spacerItem1)
+        self.pushButton_4 = QtGui.QPushButton(FindAndReplaceDlg)
+        self.pushButton_4.setObjectName("pushButton_4")
+        self.verticalLayout_2.addWidget(self.pushButton_4)
+        self.horizontalLayout_2.addLayout(self.verticalLayout_2)
+        self.label.setBuddy(self.findLineEdit)
+        self.label_2.setBuddy(self.replaceLineEdit)
+
+        self.retranslateUi(FindAndReplaceDlg)
+        QtCore.QObject.connect(self.pushButton_4, QtCore.SIGNAL("clicked()"), FindAndReplaceDlg.reject)
+        QtCore.QMetaObject.connectSlotsByName(FindAndReplaceDlg)
+        FindAndReplaceDlg.setTabOrder(self.findLineEdit, self.replaceLineEdit)
+        FindAndReplaceDlg.setTabOrder(self.replaceLineEdit, self.checkBox)
+        FindAndReplaceDlg.setTabOrder(self.checkBox, self.checkBox_2)
+        FindAndReplaceDlg.setTabOrder(self.checkBox_2, self.pushButton)
+        FindAndReplaceDlg.setTabOrder(self.pushButton, self.pushButton_2)
+        FindAndReplaceDlg.setTabOrder(self.pushButton_2, self.pushButton_3)
+        FindAndReplaceDlg.setTabOrder(self.pushButton_3, self.pushButton_4)
+
+    def retranslateUi(self, FindAndReplaceDlg):
+        FindAndReplaceDlg.setWindowTitle(QtGui.QApplication.translate("FindAndReplaceDlg", "Find and Replace", None, QtGui.QApplication.UnicodeUTF8))
+        self.label.setText(QtGui.QApplication.translate("FindAndReplaceDlg", "Find &what", None, QtGui.QApplication.UnicodeUTF8))
+        self.label_2.setText(QtGui.QApplication.translate("FindAndReplaceDlg", "Replace w&ith", None, QtGui.QApplication.UnicodeUTF8))
+        self.checkBox.setText(QtGui.QApplication.translate("FindAndReplaceDlg", "&Case sensitive", None, QtGui.QApplication.UnicodeUTF8))
+        self.checkBox_2.setText(QtGui.QApplication.translate("FindAndReplaceDlg", "Wh&ole worlds", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton.setText(QtGui.QApplication.translate("FindAndReplaceDlg", "&Find", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_2.setText(QtGui.QApplication.translate("FindAndReplaceDlg", "PushButton", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_3.setText(QtGui.QApplication.translate("FindAndReplaceDlg", "PushButton", None, QtGui.QApplication.UnicodeUTF8))
+        self.pushButton_4.setText(QtGui.QApplication.translate("FindAndReplaceDlg", "PushButton", None, QtGui.QApplication.UnicodeUTF8))
+
